@@ -1,20 +1,15 @@
 import React from "react";
-import { View, StyleSheet, ActivityIndicator, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { ProductList } from "./components/ProductList";
 import { useGetProducts } from "./queries/useGetProducts";
+import { ErrorMessage } from "../../components/common/ErrorMessage";
 
 const Products = () => {
   const { data, isLoading, error, isRefetching, refetch, isFetching } =
     useGetProducts();
 
   if (error) {
-    return (
-      <View style={styles.errorContainer}>
-        <Text style={styles.errorText}>
-          Error al cargar los productos: {error}
-        </Text>
-      </View>
-    );
+    return <ErrorMessage text="Error al cargar los productos" />;
   }
 
   return (

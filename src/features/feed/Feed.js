@@ -9,11 +9,7 @@ const FeedScreen = () => {
   const { feedData, isLoading, error, refreshFeed } = useFeed();
 
   if (error) {
-    return (
-      <View style={styles.errorContainer}>
-        <Text style={styles.errorText}>Error al cargar el feed: {error}</Text>
-      </View>
-    );
+    return <ErrorMessage text="Error al cargar los comentarios" />;
   }
 
   if (isLoading) {
