@@ -1,8 +1,14 @@
 import React from "react";
-import { FlatList, View, StyleSheet, RefreshControl, Text } from "react-native";
+import {
+  FlatList,
+  View,
+  StyleSheet,
+  RefreshControl,
+  Text,
+  Pressable,
+} from "react-native";
 import { ProductItem } from "./ProductItem";
 import { ProductSkeleton } from "./ProductSkeleton";
-import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 export const ProductList = ({
@@ -21,11 +27,9 @@ export const ProductList = ({
         <ProductSkeleton />
       </View>
     ) : (
-      <TouchableOpacity
-        onPress={() => navigation.navigate("Checkout", { item })}
-      >
+      <Pressable onPress={() => navigation.navigate("Checkout", { item })}>
         <ProductItem item={item} />
-      </TouchableOpacity>
+      </Pressable>
     );
   };
 
