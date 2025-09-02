@@ -8,30 +8,10 @@ import {
   SafeAreaView,
   StatusBar,
 } from "react-native";
-import { useAuth } from "../hooks/useAuth";
 import { MaterialIcons } from "@expo/vector-icons";
 import FeedScreen from "../features/feed/Feed";
 import { LogoutHeader } from "../components/common/LogoutHeader";
-
-//replace start
-
-const DetailsScreen = () => (
-  <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-    <Text>Details</Text>
-  </View>
-);
-
-const Products = () => {
-  const { user, logout } = useAuth();
-
-  return (
-    <View>
-      <Text>Products</Text>
-    </View>
-  );
-};
-
-//replace end
+import Products from "../features/products/Products";
 
 const Tab = createBottomTabNavigator();
 const AppNavigator = () => {
