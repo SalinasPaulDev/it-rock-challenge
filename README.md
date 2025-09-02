@@ -2,12 +2,12 @@
 
 ## 📖 Descripción
 
-Aplicación móvil desarrollada en React Native Expo, estructura de carpetas organizada y codigo simple y legible.
+Aplicación móvil desarrollada en React Native Expo, estructura de carpetas organizada y código simple y legible.
 
 ## 🚀 Tecnologías Utilizadas
 
 - **React Native** - Framework principal
-- **React Query** - Manejo de estado del servidor y cache
+- **React Query** - Manejo de estado del servidor y caché
 - **React Stack** - Gestiona pantallas de forma jerárquica
 - **React Navigation** - Navegación entre pantallas
 - **Axios** - Realizar peticiones a APIs
@@ -16,7 +16,7 @@ Aplicación móvil desarrollada en React Native Expo, estructura de carpetas org
 
 ## 📋 Requisitos Previos
 
-Antes de comenzar, asegúrate de tener instalado:
+Antes de comenzar, asegurate de tener instalado:
 
 - **Node.js** (versión 16.0 o superior)
 - **npm** o **yarn**
@@ -72,12 +72,12 @@ npx react-native run-ios
 
 **Decisión:**
 
-- Use **React Query** para el manejo del estado del servidor.
+- Usé **React Query** para el manejo del estado del servidor.
 - **Context** para almacenar el estado.
 
 **Justificación React Query:**
 
-- **Cache inteligente**: Manejo automático de cache con invalidación y refetch
+- **Caché inteligente**: Manejo automático de caché con invalidación y refetch
 - **Sincronización en tiempo real**: Actualización automática cuando la ventana recupera el foco
 - **Error handling**: Manejo de errores y reintentos automáticos
 
@@ -85,12 +85,12 @@ npx react-native run-ios
 
 - **Menor boilerplate**: Menos código comparado con Redux
 - **Simplicidad**: Para el alcance actual del proyecto, Context API es suficiente
-- **Clean code**: Codigo mas limpio y legible
+- **Clean code**: Código mas limpio y legible
 - **Carga de dependencias**: Evitar agregar mas dependencias y configuracion para acciones simples
 
 **Casos de uso específicos:**
 
-- Listado de feeds con cache
+- Listado de feeds con caché
 - Sincronización automática de datos
 - Manejo de estados de loading/error
 
@@ -103,7 +103,7 @@ npx react-native run-ios
 - **Performance**: Mejor rendimiento al ser nativo de React Native
 - **Bundle size**: Menor tamaño del bundle final
 - **Compatibilidad**: 100% compatible con todas las props de React Native
-- **familiarity**: Me sentia mas familiarizado para soluciones rapidas
+- **Familiarity**: Me sentía mas familiarizado para soluciones rapidas
 
 ### 🌐 Mock/API
 
@@ -112,34 +112,34 @@ npx react-native run-ios
 **Justificación:**
 
 - **Desarrollo independiente**: Solucion rapida de implementar
-- **Recomendado**: Use ambas ya que era la forma recomendada que presentaba la tarea.
-- **Performance**: Respuestas inmediatas (tiene una simulacion de carga para mostrar loadings)
+- **Recomendado**: Usé ambas ya que era la forma recomendada que presentaba la tarea.
+- **Performance**: Respuestas inmediatas (tiene una simulación de carga para mostrar loadings)
 
 ## 📱 Funcionalidades Principales
 
 - ✅ Feed de contenido con scroll
-- ✅ Cache inteligente con React Query
+- ✅ Caché inteligente con React Query
 - ✅ Navegación fluida entre pantallas
 - ✅ Manejo de estados de carga y error
-- ✅ Validaciones de inicio de sesion
+- ✅ Validaciones de inicio de sesión
 - ✅ Validaciones de tarjeta
-- ✅ Alertas de error y exito
+- ✅ Alertas de error y éxito
 
 ## ⚠️ Limitaciones Conocidas
 
-- **Deteccion de conexion**: Me gustaria agregar la deteccion de red para notificar al usuario
-- **Paginacion**: Los productos que venian desde la api no eran tantos como para hacer paginacion
+- **Detección de conexion**: Me gustaría agregar la detección de red para notificar al usuario
+- **Paginación**: Los productos que venian desde la api no eran tantos como para hacer paginación
 
 ## 🔧 Troubleshooting
 
 ### En caso de problemas
 
-No sufri problemas para levantar la app pero en caso de que algo suceda recomendaria seguir estos pasos:
+No sufrí problemas para levantar la app pero en caso de que algo suceda recomendaría seguir estos pasos:
 
 #### Android
 
 ```bash
-# Limpiar cache de Metro
+# Limpiar caché de Metro
 npx react-native start --reset-cache
 
 # Limpiar build de Android
@@ -153,8 +153,8 @@ cd android && ./gradlew clean && cd ..
 
 ## ℹ️ Disclaimer
 
-En este proyecto se intento seguir con todas las reglas que el documento especificaba, teniendo en cuenta codigo limpio, ordenado, simplesa, evitar dependencias extras y usar las tecnologias correspondientes.
-Me gustaria haber podido agregar Typescript, Test unitarios, React hook form, zod, entre otros. Para hacer un mejor producto.
+En este proyecto se intentó seguir con todas las reglas que el documento especificaba, teniendo en cuenta código limpio, ordenado, simplesa, evitar dependencias extras y usar las tecnologías correspondientes.
+Me gustaría haber podido agregar Typescript, Test unitarios, React hook form, zod, entre otros. Para hacer un mejor producto.
 
 ## 🎉 ¡Gracias por revisar este proyecto!
 

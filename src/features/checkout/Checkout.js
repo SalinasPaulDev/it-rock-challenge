@@ -55,7 +55,7 @@ const Checkout = ({ route }) => {
     <View style={styles.container}>
       <View style={styles.titleContainer}>
         <Text style={styles.titleText}>
-          Finaliza tu compra de:{" "}
+          Finalizá tu compra de:{" "}
           <Text style={styles.productName}>{item.title}</Text>
         </Text>
         <Image source={{ uri: item.image }} style={styles.image} />

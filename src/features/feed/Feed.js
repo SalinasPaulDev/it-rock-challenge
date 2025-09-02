@@ -21,7 +21,7 @@ const FeedScreen = () => {
       <View>
         <Text style={styles.title}>Comentarios</Text>
         <Text style={styles.description}>
-          Aquí puedes ver los comentarios de los usuarios
+          Aca podés ver los comentarios de los usuarios
         </Text>
       </View>
       <FeedList

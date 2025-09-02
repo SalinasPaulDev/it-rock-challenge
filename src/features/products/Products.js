@@ -17,7 +17,7 @@ const Products = () => {
       <View>
         <Text style={styles.title}>Productos</Text>
         <Text style={styles.description}>
-          Selecciona un producto para comprar
+          Seleccioná un producto para comprar
         </Text>
       </View>
       <ProductList

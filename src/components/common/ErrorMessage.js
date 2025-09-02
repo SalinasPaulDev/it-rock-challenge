@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 export const ErrorMessage = ({
   icon = "alert-circle",
-  text = "Something went wrong",
+  text,
   iconSize = 48,
   iconColor = "#ef4444",
   textColor = "#6b7280",
