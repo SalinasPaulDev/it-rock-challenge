@@ -5,12 +5,11 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  Alert,
-  ActivityIndicator,
   Image,
 } from "react-native";
 import { useAuth } from "../../hooks/useAuth";
 import Snackbar from "react-native-snackbar";
+import { Loader } from "../../components/common/Loader";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -93,7 +92,7 @@ const Login = () => {
         disabled={isLoading}
       >
         {isLoading ? (
-          <ActivityIndicator color="white" />
+          <Loader text="Iniciando sesión..." />
         ) : (
           <Text style={styles.buttonText}>Iniciar Sesión</Text>
         )}

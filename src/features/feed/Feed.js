@@ -1,7 +1,9 @@
 import React from "react";
-import { View, StyleSheet, ActivityIndicator, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { FeedList } from "./components/FeedList";
 import { useFeed } from "../../hooks/useFeed";
+import { Loader } from "../../components/common/Loader";
+import { ErrorMessage } from "../../components/common/ErrorMessage";
 
 const FeedScreen = () => {
   const { feedData, isLoading, error, refreshFeed } = useFeed();
@@ -15,18 +17,13 @@ const FeedScreen = () => {
   }
 
   if (isLoading) {
-    return (
-      <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#3b82f6" />
-        <Text style={styles.loadingText}>Cargando publicaciones...</Text>
-      </View>
-    );
+    return <Loader text="Cargando publicaciones..." />;
   }
 
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.title}>Feed de Comentarios</Text>
+        <Text style={styles.title}>Comentarios</Text>
         <Text style={styles.description}>
           Aquí puedes ver los comentarios de los usuarios
         </Text>
@@ -60,17 +57,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#6b7280",
   },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  loadingText: {
-    marginTop: 16,
-    fontSize: 16,
-    color: "#6b7280",
-  },
+
   errorContainer: {
     flex: 1,
     justifyContent: "center",

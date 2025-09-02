@@ -1,20 +1,14 @@
 import React from "react";
-import { View, ActivityIndicator } from "react-native";
 import { useAuth } from "../hooks/useAuth";
 import AppNavigator from "./AppNavigator";
 import AuthNavigator from "./AuthNavigator";
-
-const LoadingScreen = () => (
-  <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <ActivityIndicator size="large" color="#007AFF" />
-  </View>
-);
+import { Loader } from "../components/common/Loader";
 
 const RootNavigator = () => {
   const { isAuthenticated, isLoading } = useAuth();
 
   if (isLoading) {
-    return <LoadingScreen />;
+    return <Loader text="Cargando sesión..." />;
   }
 
   return isAuthenticated ? <AppNavigator /> : <AuthNavigator />;
