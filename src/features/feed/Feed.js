@@ -2,8 +2,6 @@ import React from "react";
 import { View, StyleSheet, ActivityIndicator, Text } from "react-native";
 import { FeedList } from "./components/FeedList";
 import { useFeed } from "../../hooks/useFeed";
-import Snackbar from "react-native-snackbar";
-import { UserInfo } from "./components/UserInfo";
 
 const FeedScreen = () => {
   const { feedData, isLoading, error, refreshFeed } = useFeed();
