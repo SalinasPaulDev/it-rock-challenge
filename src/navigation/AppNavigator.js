@@ -11,7 +11,7 @@ import {
 import { useAuth } from "../hooks/useAuth";
 import { MaterialIcons } from "@expo/vector-icons";
 import FeedScreen from "../features/feed/Feed";
-import { UserInfo } from "../features/feed/components/UserInfo";
+import { LogoutHeader } from "../components/common/LogoutHeader";
 
 //replace start
 
@@ -41,7 +41,7 @@ const AppNavigator = () => {
       screenLayout={({ children, ...props }) => (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
           <StatusBar barStyle="dark-content" backgroundColor="#fff" />
-          <UserInfo {...props} />
+          <LogoutHeader {...props} />
           <View style={{ flex: 1 }}>{children}</View>
         </SafeAreaView>
       )}
