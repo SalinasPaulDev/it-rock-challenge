@@ -30,12 +30,22 @@ export const ProductSkeleton = () => {
         <Animated.View
           style={[styles.skeleton, styles.imgSkeleton, { opacity: fadeAnim }]}
         />
-        <Animated.View
-          style={[styles.skeleton, styles.titleSkeleton, { opacity: fadeAnim }]}
-        />
-        <Animated.View
-          style={[styles.skeleton, styles.priceSkeleton, { opacity: fadeAnim }]}
-        />
+        <View style={styles.infoContainer}>
+          <Animated.View
+            style={[
+              styles.skeleton,
+              styles.titleSkeleton,
+              { opacity: fadeAnim },
+            ]}
+          />
+          <Animated.View
+            style={[
+              styles.skeleton,
+              styles.priceSkeleton,
+              { opacity: fadeAnim },
+            ]}
+          />
+        </View>
       </View>
     </Card>
   );
@@ -43,22 +53,29 @@ export const ProductSkeleton = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: "row",
+    alignItems: "center",
     gap: 10,
+  },
+  infoContainer: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
+    gap: 8,
   },
   skeleton: {
     backgroundColor: "#E1E9EE",
   },
   imgSkeleton: {
-    width: "100%",
-    height: 280,
+    width: 64,
+    height: 64,
   },
   titleSkeleton: {
-    width: "60%",
+    width: "70%",
     height: 20,
   },
   priceSkeleton: {
-    width: "30%",
+    width: "40%",
     height: 20,
-    alignSelf: "flex-end",
   },
 });
