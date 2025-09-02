@@ -1,0 +1,107 @@
+[
+  {
+    "id": "c1",
+    "fullName": "Ana Pérez",
+    "avatarUrl": "",
+    "timestamp": "2025-08-01T14:35:00Z",
+    "comment": "Muy buenos precios y entrega rápida."
+  },
+  {
+    "id": "c2",
+    "fullName": "Juan Gómez",
+    "avatarUrl": "https://picsum.photos/64",
+    "timestamp": "2025-08-02T09:12:00Z",
+    "comment": "La calidad del producto cumplió mis expectativas."
+  },
+  {
+    "id": "c3",
+    "fullName": "María Rodríguez",
+    "avatarUrl": "https://picsum.photos/65",
+    "timestamp": "2025-08-02T16:45:00Z",
+    "comment": "Excelente atención al cliente. Recomendado 100%."
+  },
+  {
+    "id": "c4",
+    "fullName": "Carlos López",
+    "avatarUrl": "https://picsum.photos/66",
+    "timestamp": "2025-08-03T11:20:00Z",
+    "comment": "Productos de primera calidad. Volveré a comprar."
+  },
+  {
+    "id": "c5",
+    "fullName": "Laura Martínez",
+    "avatarUrl": "",
+    "timestamp": "2025-08-03T13:15:00Z",
+    "comment": "Envío rápido y productos bien embalados."
+  },
+  {
+    "id": "c6",
+    "fullName": "Roberto Silva",
+    "avatarUrl": "https://picsum.photos/67",
+    "timestamp": "2025-08-04T08:30:00Z",
+    "comment": "Gran variedad de productos IT. Muy satisfecho."
+  },
+  {
+    "id": "c7",
+    "fullName": "Carmen Vega",
+    "avatarUrl": "https://picsum.photos/68",
+    "timestamp": "2025-08-04T15:22:00Z",
+    "comment": "Precios competitivos y buena calidad. Recomendado."
+  },
+  {
+    "id": "c8",
+    "fullName": "Diego Morales",
+    "avatarUrl": "",
+    "timestamp": "2025-08-05T10:45:00Z",
+    "comment": "Excelente servicio post-venta. Muy profesional."
+  },
+  {
+    "id": "c9",
+    "fullName": "Sofia Herrera",
+    "avatarUrl": "https://picsum.photos/69",
+    "timestamp": "2025-08-05T17:30:00Z",
+    "comment": "Productos originales y garantía confiable."
+  },
+  {
+    "id": "c10",
+    "fullName": "Miguel Torres",
+    "avatarUrl": "https://picsum.photos/70",
+    "timestamp": "2025-08-06T12:10:00Z",
+    "comment": "La mejor tienda de tecnología que he visitado."
+  },
+  {
+    "id": "c11",
+    "fullName": "Elena Castro",
+    "avatarUrl": "",
+    "timestamp": "2025-08-06T14:55:00Z",
+    "comment": "Atención personalizada y asesoramiento técnico excelente."
+  },
+  {
+    "id": "c12",
+    "fullName": "Fernando Ruiz",
+    "avatarUrl": "https://picsum.photos/71",
+    "timestamp": "2025-08-07T09:20:00Z",
+    "comment": "Productos de última generación a precios accesibles."
+  },
+  {
+    "id": "c13",
+    "fullName": "Patricia Jiménez",
+    "avatarUrl": "https://picsum.photos/72",
+    "timestamp": "2025-08-07T16:40:00Z",
+    "comment": "Envío gratis y entrega en tiempo récord."
+  },
+  {
+    "id": "c14",
+    "fullName": "Ricardo Mendoza",
+    "avatarUrl": "",
+    "timestamp": "2025-08-08T11:05:00Z",
+    "comment": "Gran experiencia de compra online. Muy intuitivo."
+  },
+  {
+    "id": "c15",
+    "fullName": "Isabel Moreno",
+    "avatarUrl": "https://picsum.photos/73",
+    "timestamp": "2025-08-08T13:50:00Z",
+    "comment": "Productos de calidad premium. Vale cada peso invertido."
+  }
+]
