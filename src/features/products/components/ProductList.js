@@ -3,6 +3,7 @@ import { FlatList, View, StyleSheet, RefreshControl, Text } from "react-native";
 import { ProductItem } from "./ProductItem";
 import { ProductSkeleton } from "./ProductSkeleton";
 import { TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export const ProductList = ({
   data,
@@ -11,18 +12,18 @@ export const ProductList = ({
   onEndReached,
   isLoading,
 }) => {
+  const navigation = useNavigation();
   const renderProductItem = ({ item }) => {
     return isLoading || isRefreshing ? (
       <View style={styles.skeletonContainer}>
         <ProductSkeleton />
         <ProductSkeleton />
         <ProductSkeleton />
-        <ProductSkeleton />
-        <ProductSkeleton />
-        <ProductSkeleton />
       </View>
     ) : (
-      <TouchableOpacity onPress={() => console.log(item)}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("Checkout", { item })}
+      >
         <ProductItem item={item} />
       </TouchableOpacity>
     );
@@ -42,7 +43,7 @@ export const ProductList = ({
       showsVerticalScrollIndicator={false}
       contentContainerStyle={styles.listContainer}
       ItemSeparatorComponent={<View style={styles.separator} />}
-      ListEmptyComponent={renderEmptyList}
+      ListEmptyComponent={!isLoading && renderEmptyList}
       refreshControl={
         <RefreshControl
           refreshing={isRefreshing}
