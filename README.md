@@ -1,5 +1,11 @@
 # 📱 IT Rock Store
 
+<div align="center">
+  <img src="assets/img//login-screenshot.png" alt="Pantalla de Login" width="250" style="margin-right: 20px;">
+  <img src="assets/img/feed-screenshot.png" alt="Comentarios de Usuarios" width="250" style="margin-right: 20px;">
+  <img src="assets/img/products-screenshot.png" alt="Catálogo de Productos" width="250">
+</div>
+
 ## 📖 Descripción
 
 Aplicación móvil desarrollada en React Native Expo, estructura de carpetas organizada y código simple y legible.
